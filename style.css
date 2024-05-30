@@ -112,7 +112,7 @@ body section{
 
 .getCity{
     height: 19em;
-    width: 27em;
+    width: 24em;
     border-radius: 30px;
    
     grid-row: 1;
@@ -126,7 +126,7 @@ body section{
 }
 .searchButton{
     height: 50px;
-    width: 370px;
+    width: 90%;
     margin-top: 20px;
     margin-left: 20px;
     border: none;
@@ -159,13 +159,13 @@ body section{
     z-index: 2;
 }
 .search{
-    height: 100px;
+    height: 90px;
     width: 130px;
     margin: 0 0 0 30px;
 }
 .getCityImages{
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
 }
 .temperature_check{
     height: 45px;
@@ -187,20 +187,96 @@ body section{
     font-size: 19pt;
     font-weight:bolder;
 }
-
+.precipitation{
+    display: flex;
+    margin:10px 0 10px 20px;
+}
+.precipitation_icon{
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 0 0;
+}
+.section_1_hr{
+    margin-bottom: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+.placeWhere{
+    margin: 0 0 0 20px;
+    display: flex;
+}
+.currentTime{
+    display: flex;
+    margin: 0 0 0 20px;
+}
+.getCityName , .getCityTime{
+    font-weight: lighter;
+    font-size: smaller;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+/*////////////////////////////////*/
 .displaysWind{
     height:19em ;
-    width: 43em;
+    width: 47em;
     grid-row: 1;
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
     border: none;
     border-radius: 30px;
     background: #fff;
     padding: 12px 0 0 0;
 }
+.todaysHighlights{
+    height:12em;
+    width: 14em;
+    border: none;
+    border-radius: 20px;
+    background: red;
+    margin:0 5% 0 5%;
+}
+#windStatus{
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+#UVIndex{
+    grid-column:2;
+    grid-row:1;
+}
+#sunriseSunSet{
+    grid-column: 3;
+    grid-row: 1;
+}
+.todaysHighlightsIndex{
+    width: 14em;
+    height: 5em;
+    border: none;
+    border-radius: 20px;
+    background: #000;
+    margin:0 5% 0 5%;
+}
+#humidityCard{
+    grid-column: 1;
+    grid-row: 2;
+    
+}
+#visibilityCard{
+    grid-column: 2;
+    grid-row: 2;
+}
+#feelsLikeCard{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+
 .displaysWeather{
     height: 18.5em;
-    width: 27em;
+    width: 24em;
     border-radius: 30px;
     background: #fff;
     grid-row: 2;
@@ -208,7 +284,7 @@ body section{
 }
 .displayCity{
     height:18.5em ;
-    width: 43em;
+    width: 47em;
     grid-row: 2;
     grid-column: 2;
     border: none;
