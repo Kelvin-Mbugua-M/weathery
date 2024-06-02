@@ -1,0 +1,74 @@
+/* //////////////////////////////////// */
+/* /////////main displays contents nav*/
+.sectionMain{
+    height: 94vh;
+    width: 84vw;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+    grid-row: 1;
+    grid-column:2;
+    /* background-color: aqua; */
+    padding: 8px;
+}
+.card1{
+    height: 40vh;
+    width: 26vw;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: rgb(255,255,255,0.2);
+}
+
+
+.searchText{
+    
+    height: 35px;
+    width: 20vw;
+    margin-left:20px ;
+    border: none;
+    border-radius:30px;
+    position: relative;
+}
+.searchText input{
+    height: 100%;
+    width: 100%;
+    background: #191B1F;
+    border: none;
+    position: absolute;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: larger;
+    font-weight: bold;
+    /* visibility:hidden; */
+}
+.searchText i{
+    position: absolute;
+    right: 0;
+    border-radius:50% ;
+    height:28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191B1F ;
+    opacity: 0.6;
+    cursor: default;
+    cursor: pointer;
+}
+.weatherSymbol{
+    height: 80px;
+    width: 80px;
+    margin:0 0 0 20px;
+    background: #000;
+
+}
+.tempCard1p{
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 100%;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 25px;
+    background: #000;
+}
