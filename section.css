@@ -10,17 +10,30 @@
     grid-column:2;
     /* background-color: aqua; */
     padding: 8px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
 }
 .card1{
-    height: 40vh;
-    width: 26vw;
+    height: 42vh;
+    width: 24vw;
     border: none;
     border-radius: 30px;
     padding: 20px;
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+    top: 1;
     background-color: rgb(255,255,255,0.2);
+    box-shadow: 1px 1px 2px 1px  rgba(5,120,255,.3),1px 1px 2px 1px rgba(238,174,202,.3);
+    /* background: rgb(5,120,255);
+    backdrop-filter: radial-gradient(circle, rgba(5,120,255,1) 10%, rgba(238,174,202,1) 76%); */
+    /* background-image: url('./images/bgS1.png' );
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    backdrop-filter: blur(50px) brightness(80%); */
 }
-
-
 .searchText{
     
     height: 35px;
@@ -29,6 +42,7 @@
     border: none;
     border-radius:30px;
     position: relative;
+    opacity: 1;
 }
 .searchText input{
     height: 100%;
@@ -57,18 +71,83 @@
     cursor: pointer;
 }
 .weatherSymbol{
-    height: 80px;
+    height: 70px;
     width: 80px;
     margin:0 0 0 20px;
-    background: #000;
 
 }
-.tempCard1p{
+.card1 article{
     display: flex;
-    flex-direction: row;
-    height: 35px;
-    width: 100%;
-    padding: 0 0 0 20px;
-    margin: 0 0 0 25px;
-    background: #000;
+    justify-content: flex-start;
+}
+.tempCard{
+    margin: 5px 0 2px 40px;
+    font-size: large;
+    font-weight: lighter;
+    color: #fff;
+    opacity: 1;
+}
+.tempCard_1{
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+.conditionCard,.cityCard,.calDateCard1{
+    font-size: smaller;
+    margin-bottom: 5px;
+}
+.conditionCard i,.cityCard i,.calDateCard1 i{
+    margin:0 10px 0 5px;
+}
+.card1 hr{
+    margin:0 0 5px 0;
+}
+/* ///////////////////////////// */
+
+.card3{
+    width: 24vw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    grid-row: 2;
+    grid-column: 1;
+
+}
+.card3  select{
+    background-color: rgb(255,255,255,0.2);
+    border: none;
+    height: 30px;
+    border-radius: 30px;
+    color: #fff;
+    outline: none;
+    text-align: center;
+}
+.card3 select option button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    opacity: 1;
+    outline: none;
+}
+.card3 select option{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+/* .card3 select:hover,.card3 select:active,.card3 select:{
+    outline-style: solid;
+    outline-color:2px 2px 2px rgba(5, 235, 243, 0.3);
+} */
+.card4{
+    height: 42vh;
+    width: 58vw;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 15px;
+    grid-row: 1;
+    grid-column: 2;
+    position: relative;
+    top: 1;
+    background-color: rgb(255,255,255,0.2);
+    box-shadow: 1px 1px 2px 1px  rgba(5,120,255,.3),1px 1px 2px 1px rgba(238,174,202,.3);
 }

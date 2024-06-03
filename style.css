@@ -1,0 +1,93 @@
+.card2{
+    height: 42vh;
+    width: 24vw;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    grid-row: 3;
+    grid-column: 1;
+    position: relative;
+    top: 1;
+    background-color: rgb(255,255,255,0.2);
+    box-shadow: 1px 1px 2px 1px  rgba(5,120,255,.3),1px 1px 2px 1px rgba(238,174,202,.3);
+    display: flex;
+}
+.cloudDay{
+    height: 30px;
+    width: 30px;
+
+    backdrop-filter: blur(20px) brightness(70%) saturation(60%);
+}
+.table_1{
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    align-self: center;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.table_1  tr td:nth-child(2) article{
+    font-size:smaller;
+    font-weight: 500;
+    bottom: 0;
+    width: 40px;
+    display: flex;
+}
+.table_1  tr td:nth-child(2){
+    font-size:larger;
+    font-weight: 900;
+}
+.cardDay2{
+    height: 15vh;
+    width: 90%;
+    position: absolute;
+    bottom: 5px;
+    margin: 10px 10px 10px 0px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(25, 27, 31 , 0.2);
+    font-size: small;
+    color: rgb(255,255,255,1);
+    z-index: 15;
+    visibility:visible;
+
+}
+.cardDay2Cloud {
+    height:70px;
+    width: 70px;
+    margin-left: 10px;
+}
+
+.wavy{
+    height: 100px;
+    width: 120px;
+    margin-right: 10px;
+    stroke-fill: #fff;
+}
+
+.thisTemp{
+    font-size: x-large;
+}
+
+.table_2{
+    position: absolute;
+    top: 10px;
+    margin: 10px 10px 0 10px;
+    background-color: transparent;
+}
+.table_2 img{
+    height: 30px;
+   
+}
+.table_2 td{
+    min-width: 60px;
+    font-size: large;
+    color: rgb(255,255,255,1);
+    margin-right: 15px;
+    text-align: center;
+} 

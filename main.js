@@ -1,7 +1,7 @@
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
+const dateCard1=document.getElementsById('dateCard1');
 function time_Date(){
     let todayDate = new Date();
     let amCheck = "AM";
@@ -12,7 +12,9 @@ function time_Date(){
     let time = `${todayDate.getHours()>10?"0":""}${todayDate.getHours()>=12?todayDate.getHours()-12:todayDate.getHours()}:${todayDate.getMinutes()<10?"0":""}${todayDate.getMinutes()} ${amCheck}`;
     // 05 : 11 AM 
     // 25 july 2024
+    dateCard1.innerText=dateToday;
     console.log(time,'\n',dateToday,'\n',todayDate.getDay(1));
-    console.log(days[todayDate.getDay()])
+    console.log(days[todayDate.getDay()]);
+    console.log(dateCard1,typeof dateCard1);
 }
 time_Date();
