@@ -34,6 +34,14 @@
     opacity: 0.8;
     backdrop-filter: blur(50px) brightness(80%); */
 }
+.dateCard1{
+    width: 130px;
+    font-size:smaller;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align:left;
+}
 .searchText{
     
     height: 35px;
@@ -47,13 +55,14 @@
 .searchText input{
     height: 100%;
     width: 100%;
-    background: #191B1F;
+    background: rgb(25, 27, 31,.5);
     border: none;
     position: absolute;
     border-radius: 30px;
     padding-left: 20px;
     font-size: larger;
     font-weight: bold;
+    outline: none;
     /* visibility:hidden; */
 }
 .searchText i{
@@ -65,7 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #191B1F ;
+    background-color: rgb(25, 27, 31,0.5) ;
     opacity: 0.6;
     cursor: default;
     cursor: pointer;

@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6fb7e94352.js" crossorigin="anonymous"></script>
-     <script src="main.js"></script>
-     <script src="render.js"></script>
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="section.css">
      <link rel="stylesheet" href="card4.css">
@@ -44,7 +42,10 @@
             <article class="conditionCard"><i class="fa-solid fa-cloud-showers-heavy"></i> <article class="conditionCard1">Rainy Storm Clouds</article></article>
             <hr>
             <article  class="cityCard"><i class="fa-solid fa-location-dot"></i><article class="cityCard1">Florida ,US</article></article>
-            <article class="calDateCard1"><i class="fa-regular fa-calendar-days"></i> <article id="dateCard1">23 Jun 2025</article></article>
+            <article class="calDateCard1">
+                <i class="fa-regular fa-calendar-days"></i>
+                <input type="text" class="dateCard1"id="dateCard1">
+            </article>
         </div>
         <div class="card2">
             <table class="table_1">
@@ -145,11 +146,33 @@
 
         </div>
         <div class="card6">
-            <div class="precipitationBar"></div>
-            <div class="cardsCity"></div>
+            <div class="precipitationBar">
+                <article>precipitation</article>
+                <div class="line"></div>
+                <article>
+                    Extreme   Heavy    Moderate   Light
+                </article>
+            </div>
+            <div class="cardsCity" id="card">
+                <div class="card11">
+                    <i class="fa-solid fa-poo-storm"></i>
+                    <article>Carlifornia</article>
+                    <article>US</article>
+                </div>
+                <div class="card22">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <article>Texas</article>
+                    <article>US</article>
+                </div>
+                <div class="card33">
+                    <i class="fa-solid fa-cloud"></i>
+                    <article>Florida</article>
+                    <article>US</article>
+                </div>
+            </div>
             <div class="buttons">
                 <article>
-                    <button>
+                    <button id="addElementsZoom">
                         <i class="fa-solid fa-plus"></i>
                     </button>
                     <button>
@@ -169,5 +192,7 @@
             </div>
         </div>
     </section>
+    <script src="main.js" defer></script>
+     <script src="render.js" defer></script>
 </body>
 </html>
